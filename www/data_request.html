@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/my_colors.css">
+    <title>Cathtect Engineering | Technical Tools</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand">
+                    <h3 style="color:#CE292D; font:bolder">Technical Tools</h3>
+                </a>
+                <img src="images/Cathtect-Logo.png" class="img-responsive">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="register_rectifier.html"><span class="glyphicon glyphicon-list-alt"></span> Register Rectifier</a></li>
+                    <li><a href="data_request.html"><span class="glyphicon glyphicon-copy"></span> Data Request</a></li>
+                    <li><a href="report.html"><span class="glyphicon glyphicon-stats"></span> Reports</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-custom">
+                <h4>Data Request</h4>
+            </div>
+            <div class="panel-body">
+                <form id="frmMessage" name="frmMessage">
+                    <div id="fullpage">
+                        <p>
+                            <h4 style="color:#CE292D; font:bolder">Request for data from TRU</h4>
+                        </p>
+                        <div class="form-group">
+                        <label for="country">Select Rectifier by Location:</label>
+                        <select class="form-control" name="rectifier" id="rectifier" required>
+                            <option value="">-- Select option --</option>
+                            <option value="0835156147">234 Main Road - Switchmode TRU</option>
+                            <option value="0112514521">Substation 2023 - Automatic Controlled Rectifier</option>
+                            <option value="0784512012">5 New Road - Switchmode TRU</option>
+                            <option value="0212321452">Head Office - Portable Rectifier Unit</option>
+                        </select>
+                    </div>
+                        <div class="form-group">
+                            <label for="sendto">RMU Cellphone Number:</label>
+                            <input type="text" class="form-control" name="sendto" id="sendto" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="textmsg">Message:</label>
+                            <textarea class="form-control" rows="3" name="textmsg" id="textmsg" readonly>VAL</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning" id="btnSendSMS">Send</button>
+                        <hr/>
+                        <div id='data' style='text-align:left;'></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery.validate.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-sms/www/SMS.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-sms-receiver/www/SmsReceiver.js"></script>
+    <script type="text/javascript" src="scripts/data_request.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>

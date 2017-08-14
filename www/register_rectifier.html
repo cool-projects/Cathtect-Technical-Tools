@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/my_colors.css">
+    <title>Cathtect Engineering | Technical Tools</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand">
+                    <h3 style="color:#CE292D; font:bolder">Technical Tools</h3>
+                </a>
+                <img src="images/Cathtect-Logo.png" class="img-responsive">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="register_rectifier.html"><span class="glyphicon glyphicon-list-alt"></span> Register Rectifier</a></li>
+                    <li><a href="data_request.html"><span class="glyphicon glyphicon-copy"></span> Data Request</a></li>
+                    <li><a href="report.html"><span class="glyphicon glyphicon-stats"></span> Reports</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-custom">
+                <h4>Register Rectifier</h4>
+            </div>
+            <div class="panel-body">
+                <form id="register" name="register">
+                    <div class="form-group">
+                        <label for="company">Company:</label>
+                        <input type="text" class="form-control" name="company" id="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Rectifier Location:</label>
+                        <input type="text" class="form-control" name="location" id="location">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Type of Rectifier:</label>
+                        <select class="form-control" name="type_of_rectifier" id="type_of_rectifier" required>
+                            <option value="">-- Select option --</option>
+                            <option>Switchmode TRU</option>
+                            <option>Automatic Controlled Rectifier</option>
+                            <option>Manually Controlled Transformer Rectifier</option>
+                            <option>Portable Rectifier Unit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">RMU Cellphone Number:</label>
+                        <input type="text" class="form-control" name="rmu_cellphone" id="rmu_cellphone">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Voltage Rating:</label>
+                        <input type="text" class="form-control" name="voltage" id="voltage">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Current Rating:</label>
+                        <input type="text" class="form-control" name="current" id="current">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">AC:</label>
+                        <input type="text" class="form-control" name="ac" id="ac">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Phase:</label>
+                        <input type="text" class="form-control" name="phase" id="phase">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Serial Number:</label>
+                        <input type="text" class="form-control" name="serial_number" id="serial_number">
+                    </div>
+                    <button type="submit" class="btn btn-warning" id="btnSubmit">Register Rectifier</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery.validate.js"></script>
+    <script type="text/javascript" src="scripts/register_rectifier.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

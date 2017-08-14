@@ -1,0 +1,25 @@
+{
+    "name": "Cathtect Technical Tools",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-sms": "^1.0.5",
+        "cordova-plugin-sms-receiver": "^0.1.6",
+        "cordova-plugin-whitelist": "1",
+        "cordova-windows": "^5.0.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-sms": {},
+            "cordova-plugin-sms-receiver": {}
+        },
+        "platforms": [
+            "android",
+            "ios",
+            "windows"
+        ]
+    }
+}
